@@ -1,8 +1,10 @@
 {
-  "Locations" : [
+  "locations" : [
     {"location": "Tokyo"},
     {"location": "New York"},
-    {"location": "Minneapolis"}
+    {"location": "Minneapolis"},
+    {"location": "Paris"},
+    {"location": "Atlanta"}
 
   ]
 }

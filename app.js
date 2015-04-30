@@ -15,6 +15,27 @@
 
 //
 
-$(document).ready(function(){
+var cityData = null;
+var cityHtml = null;
 
+$(document).ready(function(){
+    console.log(cityData, cityHtml);
+    $('#get-info-btn').on('click',function(){
+        if(cityHtml === null){
+            $.get('location.html', function(data) {
+                cityHtml = data;
+                console.log("It worked");
+                $("#more-stuff").append(data);
+            });
+        } else {
+            console.log("You already got the HTML");
+        }
+
+
+        $.get('data.json', function(data){
+            console.log("second request");
+            var firstCity = data.locations[0].location;
+
+        });
+    });
 });

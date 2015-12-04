@@ -14,55 +14,118 @@
 //Response -
 
 //
-
-var cityData = null;
-var cityHtml = null;
-
 $(document).ready(function(){
-    console.log(cityData, cityHtml);
-    $('#get-info-btn').on('click',function(){
+    $('.adjective').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
 
-        $('#more-stuff').empty();
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.adjectives.length-1) + 1);
+            var adjective = data.adjectives[i].adjective;
+            console.log(adjective);
+            console.log(workPlease);
 
+            workPlease.append(adjective).hide().fadeIn("slow");
+        });
+    });
+    $('.noun').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
 
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.nouns.length-1) + 1);
+            var noun = data.nouns[i].noun;
 
-                $.get('location.html', function(data){
-                    cityData = data;
-                    $("#more-stuff").append(cityData);
-                });
+            workPlease.append(noun).hide().fadeIn("slow");
+        });
+    });
+    $('.plural_noun').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
 
-                $.get('data.json', function(data) {
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.plural_nouns.length-1) + 1);
+            var plural_noun = data.plural_nouns[i].plural_noun;
 
-                    cityHtml = data;
+            workPlease.append(plural_noun).hide().fadeIn("slow");
+        });
+    });
+    $('.verb_ending_in_ing').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
 
-                    for(var i = 0; i < cityHtml.locations.length; i++) {
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.verbs_ending_in_ing.length-1) + 1);
+            var verb_ending_in_ing = data.verbs_ending_in_ing[i].verb_ending_in_ing;
 
-                        var cityName = cityHtml.locations[i].location;
-                        var people = cityHtml.locations[i].population;
-                        var citySize = cityHtml.locations[i].area;
+            workPlease.append(verb_ending_in_ing).hide().fadeIn("slow");
+        });
+    });
+    $('.game').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
 
-                        console.log("It worked");
-                        $(".location-container").prepend("<div class='well col-md-4'><p>City: " + cityName + "</p><p>Population: " + people + "</p><p>Area: " + citySize + "</p><button class='btn btn-info'>Remove</button></div>").hide().fadeIn("slow");
-                    }
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.games.length-1) + 1);
+            var game = data.games[i].game;
 
-                });
+            workPlease.append(game).hide().fadeIn("slow");
+        });
+    });
+    $('.place').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
 
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.places.length-1) + 1);
+            var place = data.places[i].place;
 
-        //if(cityData === null){
-        //    $.get('data.json', function(data){
-        //        console.log("This also worked");
-        //        cityData = data;
-        //        var firstCity = data.locations[3].location;
-        //
-        //    });
-        //} else {
-        //    console.log(cityData.locations[3].population);
-        //    console.log("You already got the data");
-        //}
+            workPlease.append(place).hide().fadeIn("slow");
+        });
+    });
+    $('.part_of_the_body').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
 
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.parts_of_the_body.length-1) + 1);
+            var part_of_the_body = data.parts_of_the_body[i].part_of_the_body;
+
+            workPlease.append(part_of_the_body).hide().fadeIn("slow");
+        });
+    });
+    $('.plant').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
+
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.plants.length-1) + 1);
+            var plant = data.plants[i].plant;
+
+            workPlease.append(plant).hide().fadeIn("slow");
+        });
+    });
+    $('.number').on('click',function(){
+        $(this).empty();
+        var workPlease = $(this);
+        console.log(workPlease);
+
+        $.get('data.json', function(data) {
+            var i = Math.floor((Math.random() * data.numbers.length-1) + 1);
+            var number = data.numbers[i].number;
+
+            workPlease.append(number).hide().fadeIn("slow");
+        });
     });
 
-    $("#more-stuff").on('click', 'button', function(){
-       $(this).parent().fadeOut("slow");
-    });
+
+
 });

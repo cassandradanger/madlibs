@@ -1,10 +1,65 @@
 {
-  "locations" : [
-    {"location": "Tokyo", "population": 13350000, "area": "842mi^2"},
-    {"location": "New York", "population": 8400000, "area": "469mi^2"},
-    {"location": "Minneapolis", "population": 400070, "area": "58.4mi^2"},
-    {"location": "Paris", "population": 2200000, "area": "40.7mi^2"},
-    {"location": "Atlanta", "population": 447841, "area": "132.4mi^2"}
-
+  "adjectives" : [
+    {"adjective": "FUNNY"},
+    {"adjective": "DEADLY"},
+    {"adjective": "SMELLY"},
+    {"adjective": "STUPID"},
+    {"adjective": "FLAKY"}
+  ],
+  "nouns" : [
+    {"noun" : "ELEPHANT"},
+    {"noun" : "FACTORY"},
+    {"noun" : "CITY"},
+    {"noun" : "PICKLE"},
+    {"noun" : "CAR"}
+  ],
+  "plural_nouns" : [
+    {"plural_noun" : "CATS"},
+    {"plural_noun" : "BALLOONS"},
+    {"plural_noun" : "CHAIRS"},
+    {"plural_noun" : "SUNGLASSES"},
+    {"plural_noun" : "BEERS"}
+  ],
+  "verbs_ending_in_ing" : [
+    {"verb_ending_in_ing" : "RUNNING"},
+    {"verb_ending_in_ing" : "DRINKING"},
+    {"verb_ending_in_ing" : "FARTING"},
+    {"verb_ending_in_ing" : "LAUGHING"},
+    {"verb_ending_in_ing" : "EATING"}
+  ],
+  "games" : [
+    {"game" : "POKER"},
+    {"game" : "HIDE AND SEEK"},
+    {"game" : "CRIBBAGE"},
+    {"game" : "GUESS WHO"},
+    {"game" : "BATTLESHIP"}
+  ],
+  "places" : [
+    {"place" : "BAR"},
+    {"place" : "BASEMENT"},
+    {"place" : "MOUNT RUSHMORE"},
+    {"place" : "GRANDMA'S HOUSE"},
+    {"place" : "THE MALL"}
+  ],
+  "parts_of_the_body" : [
+    {"part_of_the_body" : "BUTT"},
+    {"part_of_the_body" : "EYEBALL"},
+    {"part_of_the_body" : "EAR"},
+    {"part_of_the_body" : "BIG TOE"},
+    {"part_of_the_body" : "HAND"}
+  ],
+  "plants" : [
+    {"plant" : "DANDELION"},
+    {"plant" : "CORN"},
+    {"plant" : "LILAC"},
+    {"plant" : "FERN"},
+    {"plant" : "TREE"}
+  ],
+  "numbers" : [
+    {"number" : "23"},
+    {"number" : "127"},
+    {"number" : "12"},
+    {"number" : "1"},
+    {"number" : "8"}
   ]
 }

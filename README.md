@@ -12,8 +12,12 @@ We will then create a data.json file and create an array of objects. Each object
 The next step is to create a "get" request in our app.js. Each specific "get" request will fire off when a certain type of word's button is clicked.
 There will be several "get" requests, one for each type of word....or you could create a function that loops through the options and only hardcore one "get" request with variables.
 
-With the data received from that get request, we can perform a randomization function to grab a random word from the returned object. We will then append that word to the DOM.
-It should take the place of the button that was clicked.
+With the data received from that get request, we can perform a randomization function to grab a random word from the returned object. We will then append that word to the DOM. It should take the place of the button that was clicked.
 
 
+HARD MODE:
+Don't clear out the button, just replace the text, so the user can keep clicking the button to keep changing the word.
+
+PRO MODE: 
+Add jQuery animation to the buttons and words.
 

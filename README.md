@@ -7,7 +7,7 @@ To start, you will need to create an index.html file that contains the Madlib (c
 
 We will also need to link up our app.js, stylesheet.css, bootstrap and jquery files.
 
-We will then create a data.json file and create an array of objects. Each object will represent a type of word that is requested in the Mad Lib (adjectives, nouns, verbs, etc). Each object will hold several options for each type of word
+We will then create a data.json file and create an object of arrays. Each array will represent a type of word that is requested in the Mad Lib (adjectives, nouns, verbs, etc). Each array will hold several objects for each type of word
 
 The next step is to create a "get" request in our app.js. Each specific "get" request will fire off when a certain type of word's button is clicked.
 There will be several "get" requests, one for each type of word....or you could create a function that loops through the options and only hardcore one "get" request with variables.
